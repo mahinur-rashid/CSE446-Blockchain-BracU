@@ -9,7 +9,7 @@ pragma solidity >= 0.8.2 <0.9.0;
 // checkpoint 4
 contract Checkpoint4 {
     uint private studentID = 22301714;
-    string private name = "Mahinur";
+    string private name = "Mahinur Rashid";
 
     function StudentName(uint _studentID) public view returns (string memory) {
         uint lastTwoDigits = _studentID % 100;
