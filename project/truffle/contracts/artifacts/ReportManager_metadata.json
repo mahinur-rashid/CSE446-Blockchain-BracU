@@ -1,0 +1,455 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userManager",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
+					}
+				],
+				"name": "checkDivision",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
+					}
+				],
+				"name": "checkDivisionIndex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_cid",
+						"type": "bytes32"
+					}
+				],
+				"name": "checkReportExist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "findAllReports",
+				"outputs": [
+					{
+						"internalType": "bytes32[]",
+						"name": "",
+						"type": "bytes32[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_cid",
+						"type": "bytes32"
+					}
+				],
+				"name": "findReportByCID",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "cid",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "height",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "location",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "contact",
+								"type": "string"
+							},
+							{
+								"internalType": "enum Urgency",
+								"name": "urgency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum ReportStatus",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Report",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
+					}
+				],
+				"name": "findReportByDivision",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "cid",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "height",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "location",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "contact",
+								"type": "string"
+							},
+							{
+								"internalType": "enum Urgency",
+								"name": "urgency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum ReportStatus",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Report[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_reportCID",
+						"type": "bytes32"
+					}
+				],
+				"name": "reportComplete",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_reportCID",
+						"type": "bytes32"
+					}
+				],
+				"name": "reportFalse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "reportMap",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "cid",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "height",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "location",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "contact",
+						"type": "string"
+					},
+					{
+						"internalType": "enum Urgency",
+						"name": "urgency",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum ReportStatus",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_height",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_contact",
+						"type": "string"
+					}
+				],
+				"name": "reportMissing",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sortDivisionByCount",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sortDivisionByCountDesc",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testReport",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_reportCID",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "enum ReportStatus",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"name": "updateReport",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"truffle/contracts/ReportManager.sol": "ReportManager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"truffle/contracts/ReportManager.sol": {
+			"keccak256": "0x3fd25e13ac95060dd71fc43da6efa06f746e2551bd5a764396839f4b4aea81ab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aeee8631b5c2bb2c3f4685712876070a0d8ec9ac82e38548ed6cf826d4efdffa",
+				"dweb:/ipfs/QmfWA6pWsNJdzrcQkSYqoPcjAFNKGqUJUrks1ssRsSrvgW"
+			]
+		},
+		"truffle/contracts/StringUtils.sol": {
+			"keccak256": "0x6c3f713ac6e86f7ade82c7f9a760e7ab56b041af483f838b5e4a2aa8aed50106",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e312f533454933846dae0cbacbc7b627049489f01747558c44667a570fff98f7",
+				"dweb:/ipfs/QmSG5TEcrNbkiAToeT9nGw7jtmWbkxftZxBbZTokrzN3AS"
+			]
+		},
+		"truffle/contracts/UserManager.sol": {
+			"keccak256": "0x67bd22a43804a1e4b61027ad4479627e80169f8f257dcf592aae242974ab9813",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a4240141c886795815f77c2348d6745eed181fa301398a71678cd608fcef0af5",
+				"dweb:/ipfs/QmXjUuY2xq5XdRrh64MDkuqeaTkWii3rLXzsA3JHdJiYkh"
+			]
+		}
+	},
+	"version": 1
+}
